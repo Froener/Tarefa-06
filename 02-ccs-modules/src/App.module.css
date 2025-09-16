@@ -1,0 +1,77 @@
+.app {
+  min-height: 100vh;
+  background: linear-gradient(
+    to bottom right,
+    var(--bg-gradient-from),
+    var(--bg-gradient-to)
+  );
+  transition: all 0.3s ease;
+  color: var(--text);
+}
+
+.main {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 1rem 1rem;
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.heroTitle {
+  font-size: 2.5rem;
+  font-weight: bold;
+  background: var(--gradient-primary);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.heroText {
+  font-size: 1.25rem;
+  max-width: 42rem;
+  margin: 0 auto;
+  line-height: 1.6;
+  color: var(--text-muted);
+}
+
+.productsGrid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
+}
+
+@media (min-width: 481px) {
+  .productsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 769px) {
+  .productsGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1025px) {
+  .productsGrid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.footer {
+  margin-top: 5rem;
+  border-top: 1px solid var(--border);
+}
+
+.footerContent {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 1rem;
+  text-align: center;
+  color: var(--text-muted);
+}

@@ -1,0 +1,68 @@
+.card {
+  background-color: var(--bg);
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  border: 1px solid var(--border);
+  overflow: hidden;
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+.imagePlaceholder {
+  aspect-ratio: 1/1;
+  background: linear-gradient(to bottom right, #e5e7eb, #d1d5db);
+}
+
+.content {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.textBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.textLine {
+  height: 1.25rem;
+  background: linear-gradient(to right, #e5e7eb, #d1d5db);
+  border-radius: 0.375rem;
+}
+.textLineShort {
+  height: 1rem;
+  width: 75%;
+  background: linear-gradient(to right, #e5e7eb, #d1d5db);
+  border-radius: 0.375rem;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.box {
+  height: 1.5rem;
+  width: 5rem;
+  background: linear-gradient(to right, #e5e7eb, #d1d5db);
+  border-radius: 0.375rem;
+}
+.boxSmall {
+  height: 1rem;
+  width: 3rem;
+  background: linear-gradient(to right, #e5e7eb, #d1d5db);
+  border-radius: 0.375rem;
+}
+.buttonPlaceholder {
+  height: 2.5rem;
+  background: linear-gradient(to right, #e5e7eb, #d1d5db);
+  border-radius: 0.75rem;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.4;
+  }
+}

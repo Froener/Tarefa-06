@@ -1,0 +1,10 @@
+@import "tailwindcss";
+/* - Grid de produtos (cards) responsivo: ≤480px: 1 col · 481–768px: 2 cols · 769–1024px: 3 cols · ≥1025px: 4 cols. */
+
+@theme {
+  --breakpoint-sm: 481px;
+  --breakpoint-md: 769px;
+  --breakpoint-lg: 1025px;
+}
+
+@custom-variant dark (&:where(.dark, .dark *));

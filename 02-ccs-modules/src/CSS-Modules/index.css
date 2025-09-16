@@ -1,0 +1,58 @@
+/* Root colors and dark mode */
+:root {
+  --color-bg-light: #ffffff;
+  --color-bg-dark: #1f2937; /* gray-800 */
+  --color-bg-gradient-from: #f9fafb;
+  --color-bg-gradient-to: #f3f4f6;
+  --border-light: #f3f4f6; /* gray-100 */
+  --border-dark: #374151; /* gray-700 */
+
+  /* gradients */
+  --gradient-blue-purple: linear-gradient(to right, #2563eb, #9333ea);
+  --gradient-blue-purple-hover: linear-gradient(to right, #1d4ed8, #7e22ce);
+  --gradient-red-pink: linear-gradient(to right, #ef4444, #ec4899);
+  --gradient-green: linear-gradient(to right, #10b981, #059669);
+
+  /* text */
+  --text-light: #111827;
+  --text-dark: #f9fafb;
+
+  /* Light theme */
+  --bg: #ffffff;
+  --bg-gradient-from: #f9fafb;
+  --bg-gradient-to: #f3f4f6;
+  --bg-header: rgba(255, 255, 255, 0.8);
+  --border: #e5e7eb;
+  --text: #111827;
+  --text-muted: #6b7280;
+  --text-muted-alt: #9ca3af;
+  --gradient-primary: linear-gradient(to right, #2563eb, #9333ea);
+  --gradient-primary-hover: linear-gradient(to right, #1d4ed8, #7e22ce);
+  --gradient-red: linear-gradient(to right, #ef4444, #ec4899);
+  --gradient-green: linear-gradient(to right, #10b981, #059669);
+}
+
+.dark {
+  /* Dark theme overrides */
+  --bg: #1f2937;
+  --bg-gradient-from: #111827;
+  --bg-gradient-to: #1f2937;
+  --bg-header: rgba(17, 24, 39, 0.8);
+  --border: #374151;
+  --text: #f9fafb;
+  --text-muted: #9ca3af;
+  --text-muted-alt: #d1d5db;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: var(--color-bg-gradient-from);
+  color: var(--text-light);
+  transition: all 0.3s ease;
+}
+
+.dark body {
+  background: var(--color-bg-dark);
+  color: var(--text-dark);
+}
