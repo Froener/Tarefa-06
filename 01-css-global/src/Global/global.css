@@ -12,6 +12,10 @@ body {
   transition: background 0.3s ease, color 0.3s ease;
 }
 
+button {
+  border: none;
+}
+
 /* Dark mode */
 html.dark,
 html.dark body {
@@ -23,10 +27,6 @@ html.dark body {
 body {
   background: linear-gradient(to bottom right, #f9fafb, #ffffff, #f3f4f6);
   color: #374151;
-}
-
-button {
-  border: none;
 }
 
 /* Container */
@@ -59,6 +59,12 @@ button {
 }
 
 /* Buttons */
+button:focus-visible,
+.btn:focus-visible {
+  outline: 3px solid #a82cf0;
+  outline-offset: 2px;
+}
+
 .btn {
   display: inline-flex;
   align-items: center;
