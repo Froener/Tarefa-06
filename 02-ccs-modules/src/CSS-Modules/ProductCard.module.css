@@ -80,7 +80,6 @@
   color: inherit;
   line-height: 1.4;
   margin-bottom: 0.5rem;
-
   display: -webkit-box; /* needed for line clamping */
   line-clamp: 2;
   -webkit-box-orient: vertical; /* vertical orientation */
@@ -126,6 +125,11 @@
   font-size: 0.875rem;
 }
 
+.button:focus-visible {
+  outline: 3px solid #a82cf0;
+  outline-offset: 2px;
+}
+
 .button {
   width: 100%;
   gap: 0.5rem;
@@ -136,6 +140,7 @@
 
 .adicionar {
   font-weight: 600;
+  color: #fff;
 }
 
 .relative {
