@@ -11,7 +11,8 @@ const baseStyles = css`
   cursor: pointer;
   border: none;
   &:focus-visible {
-    box-shadow: 0 0 0 2px #3b82f6;
+    outline: 3px solid #a82cf0;
+    outline-offset: 2px;
   }
   &:disabled {
     opacity: 0.5;
